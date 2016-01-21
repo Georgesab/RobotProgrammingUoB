@@ -49,7 +49,7 @@ Tested on OS X 10.11.3 (El Capitan)
 
 8. Ensure eclipse is reading your installed Java 6 installation by again going to the 'Eclipse' menu > Preferences > Java > Installed JREs. If it does not appear here, click Add and follow the instructions.
 
-<h3> Setting up packages </h3>
+<h2> Setting up packages </h2>
 
 Best to follow the options on <a href = "https://canvas.bham.ac.uk/courses/15668/assignments/50340"> Canvas. </a>
 
@@ -57,7 +57,7 @@ Best to follow the options on <a href = "https://canvas.bham.ac.uk/courses/15668
 
 **NOTE 2**: Make sure when you are creating a NXT project to run on the robot, that under Properties > Java Build Path > Libraries the **JRE system library** is not included. You should only need the **LeJOS NXT Runtime**. If JRE system library is included, it will cause a Java heap overflow error on execution. 
 
-<h3> Flashing your robot </h3>
+<h2> Flashing your robot </h2>
 
 Not all robots will have leJOS installed.
 
@@ -66,19 +66,19 @@ Not all robots will have leJOS installed.
 3. Press "Flash lejOS firmware" and follow the instructions. 
 4. Your robot should now reboot with leJOS installed. 
 
-<h3> Running a file </h3>
+<h2> Running a file </h2>
 
 Once you have all the packages up and running and have followed the Canvas guide, you can create a new NXT project by going to File > New > Project... > LeJOS > LeJOS NXT Project. Ensure the build path for this project includes **rp-utils** and **rp-shared**.
 
 After adding code, you should be able to click run > NXT Program and providing everything has worked, it should be sent to your NXT Robot as long as it is plugged in and turned on. 
 
-<h3> Helpful Commands </h3>
+<h2> Helpful Commands </h2>
 
 <code> nxjbrowse -u </code> This allows you to browse the files on the robot and upload/delete. It also allows you to name your robot. The -u command is to specifiy USB only or it will give you a Bluetooth error. 
 
 <code> nxjflashg </code> This brings up the flashing utility to flash leJOS. The g at the end is to launch the GUI for flashing.
 
-<h3> Sources </h3>
+<h2> Sources </h2>
 
 <ul>
 <li>leJOS on OS X page on Canvas - https://canvas.bham.ac.uk/courses/15668/pages/lejos-on-os-x </li>
