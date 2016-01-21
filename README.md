@@ -1,19 +1,22 @@
 # RobotProgrammingUoB
 
-<h1> Setting up LeJOS on OS X <h1>
-<p> Tested on OS X 10.11.3 </p>
+<h1> Setting up LeJOS on OS X </h1>
+
+A quickly put together guide summarsing how to get leJOS working and connecting to the NXT Robot.
+
+Tested on OS X 10.11.3 (El Capitan)
 
 <h2> Setting up files and drivers </h2>
 
 1. Download and install Java 6 (1.6) from <a href="https://support.apple.com/kb/dl1572?locale=en_GB"> here<a>. This is the last version of Java on OS X that works in 32-bit mode, which is needed for the Fantom drivers.
 
-2. Download and install the Fantom driver from <a href="http://www.lego.com/en-us/mindstorms> here.</a>. Click downloads and then scroll down the page till you find "Download the NXT Fantom Driver". Once downloaded, click the .pkg file and follow the instructions.
+2. Download and install the Fantom driver from <a href="http://www.lego.com/en-us/mindstorms"> here.</a> Click downloads and then scroll down the page till you find "Download the NXT Fantom Driver". Once downloaded, click the .pkg file and follow the instructions.
  
 3. Download LeJOS from <a href="http://sourceforge.net/projects/nxt.lejos.p/files/"> here.</a>  The file you want is **0.9.1beta3/leJOS_NXJ_0.9.1beta-3.tar.gz** 
 
 4. Extract **leJOS_NXJ_0.9.1beta-3.tar.gz** into a directory of your choice, e.g. 'Documents/SDKs'
 
-5. Delete the build folder in the root directory of the leJOS folder.
+5. Delete the build subfolder in the root directory of the leJOS folder.
 
 6. Now you need to edit your PATH variables, the easiest way to do this is open a terminal, ensure you are at the root (type <code>cd</code>) and then type <code>vim .bash_profile.</code> To start editing press I.
 
@@ -29,9 +32,8 @@
 
 8. To test this, restart your terminal and type <code>nxjflashg</code>. If the GUI appears, you have set it up correctly. 
 
-<h2> Setting up Eclipse <h2>
-
-1. You want to download a 32-bit version of Eclipse, since the 64-bit version does not work with the Fantom driver. The last version to support 32-bit was <a href="http://www.eclipse.org/downloads/packages/release/luna/sr2"> Luna SR2. </a>. You want the 32-bit version for Mac Cocoa.
+<h2> Setting up Eclipse </h2>
+1. You want to download a 32-bit version of Eclipse, since the 64-bit version does not work with the Fantom driver. The last version to support 32-bit was <a href="http://www.eclipse.org/downloads/packages/release/luna/sr2"> Luna SR2. </a> You want the 32-bit version for Mac Cocoa.
 
 2. Extract the Eclipse folder to a directory of your choice.
 
@@ -47,13 +49,13 @@
 
 8. Ensure eclipse is reading your installed Java 6 installation by again going to the 'Eclipse' menu > Preferences > Java > Installed JREs. If it does not appear here, click Add and follow the instructions.
 
-<h3> Setting up packages <h3>
+<h3> Setting up packages </h3>
 
-Best to follow the options on <a href = "https://canvas.bham.ac.uk/courses/15668/assignments/50340"> Canvas </a>.
+Best to follow the options on <a href = "https://canvas.bham.ac.uk/courses/15668/assignments/50340"> Canvas. </a>
 
 **NOTE**: When creating a NXT project to run on the robot, right-click the project > Properties > Java Compiler and enable project specific settings and select Java 1.6. This is so that it uses Java 6 for the project. The rest of your imported projects, or projects to run in the simulator should default or be set to Java 8/1.8. 
 
-**NOTE 2**: Make sure when you are creating a NXT project to run on the robot, that y Java Build Path > Libraries that the JRE system library is not included. You should only need the LeJOS NXT Runtime. If this is included, it will cause a Java heap overflow error on execution. 
+**NOTE 2**: Make sure when you are creating a NXT project to run on the robot, that under Properties > Java Build Path > Libraries the **JRE system library** is not included. You should only need the **LeJOS NXT Runtime**. If JRE system library is included, it will cause a Java heap overflow error on execution. 
 
 <h3> Flashing your robot </h3>
 
@@ -64,9 +66,16 @@ Not all robots will have leJOS installed.
 3. Press "Flash lejOS firmware" and follow the instructions. 
 4. Your robot should now reboot with leJOS installed. 
 
+<h3> Running a file </h3>
 
-<h4> Pages used </h4>
+Once you have all the packages up and running and have followed the Canvas guide, you can create a new NXT project by going to File > New > Project... > LeJOS > LeJOS NXT Project. Ensure the build path for this project includes **rp-utils** and **rp-shared**.
+
+After adding code, you should be able to click run > NXT Program and providing everything has worked, it should be sent to your NXT Robot as long as it is plugged in and turned on. 
+
+<h3> Sources </h3>
 
 <li>
-<ul>leJOS on OS X page on Canvas https://canvas.bham.ac.uk/courses/15668/pages/lejos-on-os-x</ul>
+<ul>leJOS on OS X page on Canvas - https://canvas.bham.ac.uk/courses/15668/pages/lejos-on-os-x </ul>
+<ul> leJOS tutorial, getting started on OS X - http://www.lejos.org/nxt/nxj/tutorial/Preliminaries/GettingStartedMac.htm </ul>
+<ul> leJOS tutorial, using Eclipse - http://www.lejos.org/nxt/nxj/tutorial/Preliminaries/UsingEclipse.htm </ul>
 </li>
