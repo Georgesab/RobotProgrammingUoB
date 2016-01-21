@@ -72,10 +72,16 @@ Once you have all the packages up and running and have followed the Canvas guide
 
 After adding code, you should be able to click run > NXT Program and providing everything has worked, it should be sent to your NXT Robot as long as it is plugged in and turned on. 
 
+<h3> Helpful Commands </h3>
+
+<code> nxjbrowse -u </code> This allows you to browse the files on the robot and upload/delete. It also allows you to name your robot. The -u command is to specifiy USB only or it will give you a Bluetooth error. 
+
+<code> nxjflashg </code> This brings up the flashing utility to flash leJOS. The g at the end is to launch the GUI for flashing.
+
 <h3> Sources </h3>
 
-<li>
-<ul>leJOS on OS X page on Canvas - https://canvas.bham.ac.uk/courses/15668/pages/lejos-on-os-x </ul>
-<ul> leJOS tutorial, getting started on OS X - http://www.lejos.org/nxt/nxj/tutorial/Preliminaries/GettingStartedMac.htm </ul>
-<ul> leJOS tutorial, using Eclipse - http://www.lejos.org/nxt/nxj/tutorial/Preliminaries/UsingEclipse.htm </ul>
-</li>
+<ul>
+<li>leJOS on OS X page on Canvas - https://canvas.bham.ac.uk/courses/15668/pages/lejos-on-os-x </li>
+<li> leJOS tutorial, getting started on OS X - http://www.lejos.org/nxt/nxj/tutorial/Preliminaries/GettingStartedMac.htm </li>
+<li> leJOS tutorial, using Eclipse - http://www.lejos.org/nxt/nxj/tutorial/Preliminaries/UsingEclipse.htm </li>
+</ul>
